@@ -17,15 +17,16 @@ function ShoppingList() {
 					<li key={cat}>{cat}</li>
 				))}
 			</ul>
-			<ul className="lmj-plant-list">
-				{plantList.map((plant) => (
-					<li key={plant.id} className="lmj-plant-item">
-                    {plant.isBestSale && <span>🔥</span>}
-                    {plant.name}         
-                    {plant.isSpecialOffer && <div className="lmj-sales">Soldes</div>}
-                    <CareScale careType='water' scaleValue={plant.water} />
-                    <CareScale careType='light' scaleValue={plant.light} />
-                     </li>
+			<ul className='lmj-plant-list'>
+                {/* les props entre accolade ça eprmet de récupérer la valeur */}
+				{plantList.map(({ id, cover, name, water, light }) => (
+					<PlantItem
+						id={id}
+						cover={cover}
+						name={name}
+						water={water}
+						light={light}
+					/>
 				))}
 			</ul>
 		</div>
