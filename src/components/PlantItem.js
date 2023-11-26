@@ -1,4 +1,6 @@
-function PlantItem (){
+import '../styles/PlantItem.css'
+
+function PlantItem ({name, cover, id}){
 
 }
 
