@@ -21,6 +21,7 @@ function ShoppingList() {
                     {plant.name}         
                     {plant.isBestSale && <span>🔥</span>}
                     {plant.isSpecialOffer && <div className="lmj-sales">Soldes</div>}
+                    <CareScale scaleValue={plant.light} />
                      </li>
 				))}
 			</ul>
