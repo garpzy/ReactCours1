@@ -8,7 +8,8 @@ export const plantList = [
 	{
 		name: 'ficus lyrata',
 		category: 'classique',
-		id: '2ab'
+		id: '2ab',
+        isSpecialOffer: true
 	},
 	{
 		name: 'pothos argenté',
