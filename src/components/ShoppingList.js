@@ -1,6 +1,6 @@
-import { plantList } from "../datas/plantList";
+import { plantList } from "../datas/plantList"
 import '../styles/ShoppingList.css'
-import './CareScale.js'
+import CareScale from "./CareScale"
 
 function ShoppingList() {
 	const categories = plantList.reduce(
